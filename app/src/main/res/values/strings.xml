@@ -1,7 +1,3 @@
 <resources>
     <string name="app_name">QuizAPP</string>
-    <string name="NoId">Didn't have an account?</string>
-    <string name="name">Username:</string>
-    <string name="password">No pass</string>
-    <string name="log_In">Log In</string>
 </resources>
