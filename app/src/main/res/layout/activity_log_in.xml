@@ -12,6 +12,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="44dp"
         android:ems="10"
+        android:hint="Username"
+        android:importantForAutofill="no"
         android:inputType="textPersonName"
         android:text="@string/name"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,12 +22,13 @@
         app:layout_constraintVertical_bias="0.237" />
 
     <EditText
-        android:id="@+id/password"
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autofillHints=""
         android:ems="10"
+        android:hint="@string/password"
         android:inputType="textPassword"
-        android:text="@string/password"
         app:layout_constraintBottom_toTopOf="@+id/noIdView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.222"
@@ -41,16 +44,20 @@
         android:text="@string/log_In"
         app:layout_constraintBottom_toTopOf="@+id/noIdView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintHorizontal_bias="0.225"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.914" />
+        app:layout_constraintVertical_bias="0.807" />
 
     <Button
         android:id="@+id/signUpId"
-        android:layout_width="420dp"
-        android:layout_height="73dp"
-        android:text="Button"
+        android:layout_width="365dp"
+        android:layout_height="65dp"
+        android:background="@color/colorPrimary"
+        android:shadowColor="@color/colorPrimary"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.555"
@@ -63,11 +70,12 @@
         android:layout_width="170dp"
         android:layout_height="34dp"
         android:layout_marginTop="400dp"
+        android:gravity="center"
         android:text="@string/NoId"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.141" />
 </androidx.constraintlayout.widget.ConstraintLayout>

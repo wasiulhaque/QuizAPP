@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">QuizAPP</string>
+    <string name="name" />
+    <string name="password">Password</string>
+    <string name="log_In">Log In</string>
+    <string name="NoId">Do not have any account?</string>
+    <string name="Welcome">Welcome to the Quiz App</string>
+    <string name="login">Log in / Sing Up</string>
+    <string name="sign_up">Sign Up</string>
 </resources>
