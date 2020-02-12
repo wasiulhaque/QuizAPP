@@ -7,4 +7,16 @@
     <string name="Welcome">Welcome to the Quiz App</string>
     <string name="login">Log in / Sing Up</string>
     <string name="sign_up">Sign Up</string>
+    <string-array name="Select_Class">
+        <item>Select Class</item>
+        <item>Class 5</item>
+        <item>Class 6</item>
+        <item>Class 7</item>
+        <item>Class 8</item>
+        <item>Class 9</item>
+        <item>Class 10</item>
+        <item>Class 11</item>
+        <item>Class 12</item>
+        <item>Varsity Admission</item>
+    </string-array>
 </resources>
