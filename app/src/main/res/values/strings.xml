@@ -7,4 +7,11 @@
     <string name="Welcome">Welcome to the Quiz App</string>
     <string name="login">Log in / Sing Up</string>
     <string name="sign_up">Sign Up</string>
+    <string name="go_to_study_material_section">Go to Study Material Section</string>
+    <string name="give_quiz">Give Quiz</string>
+    <string name="choose_where_you_want_to_proceed">
+
+        Choose where you want to proceed</string>
+    <string name="go_back">Go Back</string>
+    <string name="proceed_to_quiz">Proceed to Quiz</string>
 </resources>
