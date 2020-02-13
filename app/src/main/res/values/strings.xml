@@ -12,6 +12,18 @@
     <string name="choose_where_you_want_to_proceed">
 
         Choose where you want to proceed</string>
+    <string-array name="Select_Class">
+        <item>Select Class</item>
+        <item>Class 5</item>
+        <item>Class 6</item>
+        <item>Class 7</item>
+        <item>Class 8</item>
+        <item>Class 9</item>
+        <item>Class 10</item>
+        <item>Class 11</item>
+        <item>Class 12</item>
+        <item>Varsity Admission</item>
+    </string-array>
     <string name="go_back">Go Back</string>
     <string name="proceed_to_quiz">Proceed to Quiz</string>
 </resources>
