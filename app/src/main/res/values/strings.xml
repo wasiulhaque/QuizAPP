@@ -31,5 +31,6 @@
     <string name="skip_the_question">Skip the Question</string>
     <string name="finish_quiz">Finish Quiz</string>
     <string name="submit_quiz">Submit Quiz</string>
-    <string name="question_1">Question 1:Question ?</string>
+    <string name="question_1">Question 1:Question ?</string>>
+    <string name="Wasiul">Bhai</string>
 </resources>
