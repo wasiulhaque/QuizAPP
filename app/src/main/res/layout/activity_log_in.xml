@@ -8,12 +8,13 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:ems="10"
-        android:hint="@string/name"
         android:fontFamily="@font/advent_pro_light"
+        android:hint="Username"
         android:importantForAutofill="no"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -23,37 +24,40 @@
 
     <EditText
         android:id="@+id/text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         android:ems="10"
-        android:hint="@string/password"
         android:fontFamily="@font/advent_pro_light"
+        android:hint="Password"
         android:inputType="textPassword"
         app:layout_constraintBottom_toTopOf="@+id/noIdView"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editText"
-        app:layout_constraintVertical_bias="0.13" />
+        app:layout_constraintVertical_bias="0.056" />
 
     <Button
         android:id="@+id/loginId"
-        android:layout_width="216dp"
-        android:layout_height="51dp"
-        android:layout_marginBottom="20dp"
-        android:text="@string/log_In"
-        app:layout_constraintBottom_toTopOf="@+id/noIdView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.225"
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:background="@color/colorAccent"
         android:fontFamily="@font/advent_pro_light"
+        android:text="@string/log_In"
+        android:textColor="@color/white"
         android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.807" />
+        app:layout_constraintVertical_bias="0.382" />
 
     <Button
         android:id="@+id/signUpId"
-        android:layout_width="365dp"
+        android:layout_width="match_parent"
         android:layout_height="65dp"
         android:background="@color/colorPrimary"
         android:shadowColor="@color/colorPrimary"
@@ -70,15 +74,16 @@
 
     <TextView
         android:id="@+id/noIdView"
-        android:layout_width="170dp"
+        android:layout_width="match_parent"
         android:layout_height="34dp"
         android:layout_marginTop="400dp"
+        android:fontFamily="@font/advent_pro_light"
+        android:textStyle="bold"
         android:gravity="center"
         android:text="@string/NoId"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:fontFamily="@font/advent_pro_light"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.141" />

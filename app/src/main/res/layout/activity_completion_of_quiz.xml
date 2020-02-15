@@ -8,9 +8,11 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="260dp"
-        android:layout_height="101dp"
-        android:text="                                                                                                                                                                                                                                                  Congratulations                                                                                                 "
+        android:layout_width="297dp"
+        android:layout_height="96dp"
+        android:fontFamily="@font/advent_pro_light"
+        android:gravity="center"
+        android:text="Congratulations"
         android:textAlignment="gravity"
         android:textColor="#317F39"
         android:textSize="36sp"
@@ -19,13 +21,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.388" />
+        app:layout_constraintVertical_bias="0.451" />
 
     <TextView
         android:id="@+id/textView7"
         android:layout_width="396dp"
         android:layout_height="67dp"
         android:layout_marginBottom="304dp"
+        android:fontFamily="@font/advent_pro_light"
+        android:gravity="center"
         android:text="You have completed the quiz"
         android:textColor="#2699FB"
         android:textSize="30sp"
@@ -35,7 +39,7 @@
         app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView6"
-        app:layout_constraintVertical_bias="0.756" />
+        app:layout_constraintVertical_bias="0.675" />
 
     <Button
         android:id="@+id/button14"
