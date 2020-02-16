@@ -41,6 +41,12 @@
     <string name="upload_your_own_study_material">Upload Your Own Study Material</string>
     <string name="upload">Upload</string>
     <string name="go_back">Go Back</string>
+    <string name="obtained_marks">Obtained Marks:</string>
+    <string name="previous_quizzes">Previous Quizzes</string>
+    <string name="subject_name">Subject Name</string>
+    <string name="chapter_name">Chapter Name</string>
+    <string name="time">Time</string>
+    <string name="date">Date</string>
 
     <string-array name="city_names">
         <item>Dhaka</item>
