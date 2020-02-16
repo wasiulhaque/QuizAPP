@@ -33,4 +33,22 @@
     <string name="submit_quiz">Submit Quiz</string>
     <string name="question_1">Question 1:Question ?</string>>
     <string name="Wasiul">Bhai</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="study_material_1">Study Material 1</string>
+    <string name="study_material_2">Study Material 2</string>
+    <string name="chapter_chapter_name">Chapter: Chapter Name</string>
+
+    <string-array name="city_names">
+        <item>Dhaka</item>
+        <item>Chittagong</item>
+        <item>Sylhet</item>
+        <item>Rajhshahi</item>
+        <item>Khulna</item>
+        <item>Rangpur</item>
+        <item>Mymensingh</item>
+        <item>Barisal</item>
+
+
+    </string-array>
 </resources>
