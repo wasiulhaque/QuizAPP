@@ -38,6 +38,9 @@
     <string name="study_material_1">Study Material 1</string>
     <string name="study_material_2">Study Material 2</string>
     <string name="chapter_chapter_name">Chapter: Chapter Name</string>
+    <string name="upload_your_own_study_material">Upload Your Own Study Material</string>
+    <string name="upload">Upload</string>
+    <string name="go_back">Go Back</string>
 
     <string-array name="city_names">
         <item>Dhaka</item>
