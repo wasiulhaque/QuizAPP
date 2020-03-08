@@ -22,7 +22,7 @@
         <item>Class 12</item>
         <item>Varsity Admission</item>
     </string-array>
-    <string name="go_back">Go Back</string>
+
     <string name="proceed_to_quiz">Proceed to Quiz</string>
     <string name="Option_1">Option 1</string>
     <string name="option_2">Option 2</string>

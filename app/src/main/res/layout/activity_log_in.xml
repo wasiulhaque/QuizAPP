@@ -7,7 +7,7 @@
     tools:context=".LogInActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/user_name"
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:layout_marginStart="10dp"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.237" />
 
     <EditText
-        android:id="@+id/text"
+        android:id="@+id/pass_for_login"
         android:layout_width="match_parent"
         android:layout_height="42dp"
         android:layout_marginStart="10dp"
@@ -36,7 +36,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/user_name"
         app:layout_constraintVertical_bias="0.056" />
 
     <Button

@@ -15,13 +15,13 @@
         android:textColor="@color/colorPrimary"
         android:textSize="26sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintBottom_toTopOf="@+id/user_name"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.875"
         tools:layout_editor_absoluteX="0dp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/user_name"
         android:layout_width="320dp"
         android:layout_height="41dp"
         android:layout_marginStart="44dp"
@@ -96,7 +96,7 @@
         app:layout_constraintVertical_bias="0.492" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/institution_name"
         android:layout_width="320dp"
         android:layout_height="41dp"
         android:layout_marginStart="44dp"
@@ -111,7 +111,7 @@
         app:layout_constraintVertical_bias="0.552" />
 
     <EditText
-        android:id="@+id/editText6"
+        android:id="@+id/mobile_number"
         android:layout_width="320dp"
         android:layout_height="41dp"
         android:layout_marginStart="44dp"

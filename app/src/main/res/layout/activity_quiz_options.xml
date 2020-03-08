@@ -62,7 +62,7 @@
         app:layout_constraintVertical_bias="0.453" />
 
     <Button
-        android:id="@+id/button14"
+        android:id="@+id/submit_btn"
         android:layout_width="251dp"
         android:layout_height="56dp"
         android:backgroundTint="#317F39"
@@ -76,7 +76,7 @@
         app:layout_constraintVertical_bias="0.72" />
 
     <Button
-        android:id="@+id/button15"
+        android:id="@+id/skip_btn"
         android:layout_width="251dp"
         android:layout_height="56dp"
         android:backgroundTint="#A51919"
@@ -87,11 +87,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button14"
+        app:layout_constraintTop_toBottomOf="@+id/submit_btn"
         app:layout_constraintVertical_bias="0.102" />
 
     <TextView
-        android:id="@+id/textView06"
+        android:id="@+id/question_textVIew"
         android:layout_width="308dp"
         android:layout_height="42dp"
         android:fontFamily="sans-serif"
@@ -106,5 +106,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.264" />
+
+    <ticker.views.com.ticker.widgets.circular.timer.view.CircularView
+        android:id="@+id/circular_view"
+        android:layout_width="116dp"
+        android:layout_height="62dp"
+        app:layout_constraintBottom_toTopOf="@+id/question_textVIew"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.381"
+        app:m_arc_stroke_color="@android:color/white"
+        app:m_cicle_stroke_width="14"
+        app:m_circle_radius="25"
+        app:m_circle_stroke_color="@color/colorPrimary" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

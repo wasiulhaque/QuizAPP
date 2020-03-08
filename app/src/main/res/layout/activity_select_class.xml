@@ -7,7 +7,7 @@
     tools:context=".SelectClass">
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/Select_class"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/advent_pro_light"
@@ -30,17 +30,16 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/Select_class"
         android:background="@color/colorPrimary"
         app:layout_constraintVertical_bias="0.035" />
 
     <Button
+        android:id="@+id/procced"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:fontFamily="@font/advent_pro_light"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
         android:text="Proceed"
         android:textColor="@color/white"
         android:textStyle="bold"
