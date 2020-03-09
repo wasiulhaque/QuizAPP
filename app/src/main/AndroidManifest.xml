@@ -11,6 +11,7 @@
         android:theme="@style/AppTheme">
         <activity android:name=".UploadStudyMaterial"></activity>
         <activity android:name=".QuizResult" />
+        <activity android:name=".SignUp"/>
         <activity android:name=".PreviousQuiz" />
         <activity android:name=".StudyMaterial" />
         <activity android:name=".QuizConfirmation" />
