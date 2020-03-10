@@ -23,21 +23,21 @@
 
     <Spinner
         android:id="@+id/classSpinner"
-        android:layout_width="373dp"
-        android:layout_height="53dp"
+        android:layout_width="363dp"
+        android:layout_height="51dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
+        android:background="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Select_class"
-        android:background="@color/colorPrimary"
         app:layout_constraintVertical_bias="0.035" />
 
     <Button
         android:id="@+id/procced"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="363dp"
+        android:layout_height="43dp"
         android:background="@color/colorPrimary"
         android:fontFamily="@font/advent_pro_light"
         android:text="Proceed"
@@ -45,7 +45,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/classSpinner"
-        app:layout_constraintVertical_bias="0.036"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintVertical_bias="0.035"
+        tools:layout_editor_absoluteX="24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
