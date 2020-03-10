@@ -41,8 +41,8 @@
 
     <Button
         android:id="@+id/loginId"
-        android:layout_width="match_parent"
-        android:layout_height="39dp"
+        android:layout_width="388dp"
+        android:layout_height="36dp"
         android:background="@color/colorAccent"
         android:fontFamily="@font/advent_pro_light"
         android:text="@string/log_In"
@@ -50,41 +50,41 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.478"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.382" />
+        app:layout_constraintVertical_bias="0.385" />
 
     <Button
         android:id="@+id/signUpId"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
+        android:layout_width="369dp"
+        android:layout_height="62dp"
         android:background="@color/colorPrimary"
+        android:fontFamily="@font/advent_pro_light"
         android:shadowColor="@color/colorPrimary"
         android:text="@string/sign_up"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:fontFamily="@font/advent_pro_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintHorizontal_bias="0.619"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.703" />
+        app:layout_constraintVertical_bias="0.702" />
 
     <TextView
         android:id="@+id/noIdView"
-        android:layout_width="match_parent"
-        android:layout_height="34dp"
+        android:layout_width="369dp"
+        android:layout_height="28dp"
         android:layout_marginTop="400dp"
         android:fontFamily="@font/advent_pro_light"
-        android:textStyle="bold"
         android:gravity="center"
         android:text="@string/NoId"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.619"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141" />
+        app:layout_constraintVertical_bias="0.112" />
 </androidx.constraintlayout.widget.ConstraintLayout>
