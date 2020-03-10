@@ -17,15 +17,15 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/select_chapter"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.353"
+        app:layout_constraintHorizontal_bias="0.357"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.914" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/select_chapter"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="151dp"
+        android:layout_height="31dp"
         android:layout_marginBottom="460dp"
         android:fontFamily="@font/advent_pro_light"
         android:text="Select Subject"
@@ -34,10 +34,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.342"
+        app:layout_constraintHorizontal_bias="0.346"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.618" />
+        app:layout_constraintVertical_bias="0.495" />
 
     <Button
         android:id="@+id/button6"
@@ -51,35 +51,36 @@
         app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/select_chapter"
-        app:layout_constraintVertical_bias="0.586" />
+        app:layout_constraintVertical_bias="0.559" />
 
     <Button
         android:id="@+id/chapter1"
         android:layout_width="152dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="504dp"
         android:background="@color/colorPrimary"
         android:text="Bangla"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintHorizontal_bias="0.343"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/select_chapter"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/select_chapter" />
 
     <Button
         android:id="@+id/chapter2"
         android:layout_width="152dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="444dp"
         android:background="@color/colorPrimary"
         android:text="English"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintHorizontal_bias="0.343"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/select_chapter"
-        app:layout_constraintVertical_bias="0.116" />
+        app:layout_constraintTop_toBottomOf="@+id/chapter1"
+        app:layout_constraintVertical_bias="0.842" />
 
     <Button
         android:id="@+id/button7"
@@ -93,7 +94,7 @@
         app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/select_chapter"
-        app:layout_constraintVertical_bias="0.92" />
+        app:layout_constraintVertical_bias="0.828" />
 
     <Button
         android:id="@+id/chapter4"
@@ -118,10 +119,10 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.343"
+        app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/select_chapter"
-        app:layout_constraintVertical_bias="0.263" />
+        app:layout_constraintVertical_bias="0.29" />
 
     <Button
         android:id="@+id/button8"
@@ -135,7 +136,7 @@
         app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/chapter1"
-        app:layout_constraintVertical_bias="0.758" />
+        app:layout_constraintVertical_bias="0.688" />
 
     <Button
         android:id="@+id/button2"
