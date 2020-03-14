@@ -21,7 +21,7 @@ public class ChapterSelector extends AppCompatActivity {
                 Chapter_1.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Intent intent=new Intent(ChapterSelector.this,QuizConfirmation.class);
+                        Intent intent=new Intent(ChapterSelector.this,QuizOrStudyMaterialSelector.class);
                         startActivity(intent);
                     }
                 });

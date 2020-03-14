@@ -42,10 +42,11 @@
         app:layout_constraintVertical_bias="0.675" />
 
     <Button
-        android:id="@+id/submit_btn"
-        android:layout_width="393dp"
-        android:layout_height="69dp"
+        android:id="@+id/evalue"
+        android:layout_width="360dp"
+        android:layout_height="48dp"
         android:background="#2699FB"
+        android:fontFamily="@font/advent_pro_light"
         android:text="Proceed to Evaluation"
         android:textAllCaps="false"
         android:textColor="#F7EEEE"

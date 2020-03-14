@@ -1,0 +1,77 @@
+{
+  "project_info": {
+    "project_number": "752787794101",
+    "firebase_url": "https://quiz-app-91014.firebaseio.com",
+    "project_id": "quiz-app-91014",
+    "storage_bucket": "quiz-app-91014.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752787794101:android:c2cbbbe0759a830043b6fc",
+        "android_client_info": {
+          "package_name": "com.example.quizapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752787794101-6cjnk9grtss7cei39tr94hrrrgeifbvj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.quizapp",
+            "certificate_hash": "58bb385c94a319b12e1a4abf216f2be7b8dc4294"
+          }
+        },
+        {
+          "client_id": "752787794101-bjphqs81olrj7lkksnaqla7fggdjq3hg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxj6pl7sYmalGbsyTGC_lduYpg2iB4isE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752787794101-bjphqs81olrj7lkksnaqla7fggdjq3hg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:752787794101:android:029fd6909b23f9e343b6fc",
+        "android_client_info": {
+          "package_name": "com.quizapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "752787794101-bjphqs81olrj7lkksnaqla7fggdjq3hg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCxj6pl7sYmalGbsyTGC_lduYpg2iB4isE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "752787794101-bjphqs81olrj7lkksnaqla7fggdjq3hg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

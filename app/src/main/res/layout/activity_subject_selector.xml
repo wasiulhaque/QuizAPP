@@ -43,15 +43,16 @@
         android:id="@+id/button6"
         android:layout_width="152dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="23dp"
         android:background="@color/colorPrimary"
         android:text="Chemistry"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button8"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/select_chapter"
-        app:layout_constraintVertical_bias="0.559" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/chapter1"
@@ -71,16 +72,16 @@
         android:id="@+id/chapter2"
         android:layout_width="152dp"
         android:layout_height="50dp"
-        android:layout_marginBottom="444dp"
+        android:layout_marginBottom="23dp"
         android:background="@color/colorPrimary"
         android:text="English"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/chapter3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.343"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/chapter1"
-        app:layout_constraintVertical_bias="0.842" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button7"
@@ -100,43 +101,46 @@
         android:id="@+id/chapter4"
         android:layout_width="152dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="21dp"
         android:background="@color/colorPrimary"
         android:text="Physics"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/select_chapter"
-        app:layout_constraintVertical_bias="0.425" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/chapter3"
         android:layout_width="152dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="22dp"
         android:background="@color/colorPrimary"
         android:text="Math"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/chapter4"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintHorizontal_bias="0.343"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/select_chapter"
-        app:layout_constraintVertical_bias="0.29" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button8"
         android:layout_width="152dp"
         android:layout_height="50dp"
+        android:layout_marginBottom="20dp"
         android:background="@color/colorPrimary"
         android:text="Biology"
         android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.347"
+        app:layout_constraintHorizontal_bias="0.343"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/chapter1"
-        app:layout_constraintVertical_bias="0.688" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/button2"
