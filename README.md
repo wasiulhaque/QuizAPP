@@ -1,5 +1,8 @@
-## Project: Online Study App 
-### Group Members: 
+## Project: Online Quiz App
+       1. IDE : Android Studio
+       2. Language: Java
+       3. Database Platform: Firebase
+Group Members: 
 1. Md. Wasiul Haque (180042110) 
 2. Sadman Sadaat (180042126) 
 3. Jishan Anam (180042129) 
