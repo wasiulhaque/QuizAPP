@@ -1,8 +1,8 @@
 ## Project: Online Quiz App
 Group Members: 
-1. Md. Wasiul Haque (180042110) 
-2. Sadman Sadaat (180042126) 
-3. Jishan Anam (180042129) 
+1. Md. Wasiul Haque 
+2. Sadman Sadaat 
+3. Jishan Anam 
 ### Project Details: 
 The application will have the following features: 
 * Users will log into the app providing their unique username 
