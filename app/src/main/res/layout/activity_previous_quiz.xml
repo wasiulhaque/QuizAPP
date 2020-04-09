@@ -8,20 +8,20 @@
 
     <TextView
         android:id="@+id/textView20"
-        android:layout_width="196dp"
-        android:layout_height="58dp"
+        android:layout_width="231dp"
+        android:layout_height="42dp"
         android:text="@string/obtained_marks"
         android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.246"
+        app:layout_constraintHorizontal_bias="0.294"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17"
-        app:layout_constraintVertical_bias="0.339" />
+        app:layout_constraintTop_toBottomOf="@+id/prev_quiz_details"
+        app:layout_constraintVertical_bias="0.425" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/prev_quiz_details"
         android:layout_width="302dp"
         android:layout_height="48dp"
         android:text="@string/previous_quizzes"
@@ -36,82 +36,80 @@
         app:layout_constraintVertical_bias="0.088" />
 
     <TextView
-        android:id="@+id/textView18"
-        android:layout_width="172dp"
-        android:layout_height="51dp"
+        android:id="@+id/subNamePrevQuiz"
+        android:layout_width="173dp"
+        android:layout_height="41dp"
         android:text="@string/subject_name"
         android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.222"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17"
-        app:layout_constraintVertical_bias="0.064" />
+        app:layout_constraintTop_toBottomOf="@+id/prev_quiz_details"
+        app:layout_constraintVertical_bias="0.048" />
 
     <TextView
-        android:id="@+id/textView19"
-        android:layout_width="172dp"
-        android:layout_height="51dp"
+        android:id="@+id/chapNamePrevQuiz"
+        android:layout_width="173dp"
+        android:layout_height="41dp"
         android:text="@string/chapter_name"
         android:textSize="26sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.226"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17"
-        app:layout_constraintVertical_bias="0.132" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.269" />
 
     <EditText
-        android:id="@+id/editText9"
-        android:layout_width="172dp"
-        android:layout_height="50dp"
-        android:layout_marginBottom="452dp"
+        android:id="@+id/time"
+        android:layout_width="173dp"
+        android:layout_height="48dp"
         android:ems="10"
         android:hint="@string/time"
-        android:textStyle="italic"
         android:inputType="time"
         android:textColorHint="#2699FB"
         android:textSize="26sp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.221"
+        app:layout_constraintHorizontal_bias="0.226"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/textView19"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.342" />
 
     <EditText
-        android:id="@+id/editText10"
+        android:id="@+id/date"
         android:layout_width="173dp"
         android:layout_height="47dp"
-        android:layout_marginBottom="416dp"
         android:ems="10"
         android:hint="@string/date"
-        android:textStyle="italic"
         android:inputType="date"
         android:textColorHint="#2699FB"
         android:textSize="26dp"
+        android:textStyle="italic"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintHorizontal_bias="0.226"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView19"
-        app:layout_constraintVertical_bias="0.545" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.431" />
 
     <View
         android:id="@+id/view"
-        android:layout_width="369dp"
-        android:layout_height="240dp"
+        android:layout_width="361dp"
+        android:layout_height="323dp"
         android:background="@drawable/edit_text_border2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17"
-        app:layout_constraintVertical_bias="0.044" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.296" />
 
     <Button
-        android:id="@+id/button25"
+        android:id="@+id/viewbtn"
         android:layout_width="93dp"
         android:layout_height="52dp"
         android:background="#2699FB"
@@ -137,8 +135,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintHorizontal_bias="0.4"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.709" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.954" />
 </androidx.constraintlayout.widget.ConstraintLayout>

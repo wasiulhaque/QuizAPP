@@ -8,7 +8,7 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/WelcomeToQuizApp"
         android:layout_width="match_parent"
         android:layout_height="35dp"
         android:fontFamily="@font/advent_pro_light"
@@ -40,7 +40,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.574"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/WelcomeToQuizApp"
         app:layout_constraintVertical_bias="0.0"
         tools:ignore="MissingConstraints" />
 

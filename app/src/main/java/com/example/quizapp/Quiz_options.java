@@ -23,7 +23,7 @@ public class Quiz_options extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_options);
-        option1=findViewById(R.id.option_1);
+        option1=findViewById(R.id.opt1_ques1);
         submit=findViewById(R.id.submit_btn);
         circularViewWithTimer=(CircularView)findViewById(R.id.circular_view);
         CircularView.OptionsBuilder builderWithTimer =
@@ -53,7 +53,7 @@ public class Quiz_options extends AppCompatActivity {
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(Quiz_options.this,StudyMaterial.class);
+                Intent intent=new Intent(Quiz_options.this,CompletionOfQuiz.class);
                 startActivity(intent);
             }
         });

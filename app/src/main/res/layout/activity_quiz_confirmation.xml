@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.22" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/QuizConfirmText"
         android:layout_width="126dp"
         android:layout_height="64dp"
         android:layout_marginTop="19dp"
@@ -54,11 +54,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/QuizConfirmText"
         app:layout_constraintVertical_bias="0.02" />
 
     <Button
-        android:id="@+id/button13"
+        android:id="@+id/QuizConfirmGoBack"
         android:layout_width="303dp"
         android:layout_height="80dp"
         android:background="#A51919"

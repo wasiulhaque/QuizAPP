@@ -17,9 +17,9 @@ public class CreateAccount extends AppCompatActivity {
         setContentView(R.layout.activity_create_account);
 
         city_names = getResources().getStringArray(R.array.city_names);
-        spinner = (Spinner) findViewById(R.id.spinner);
+        spinner = (Spinner) findViewById(R.id.CitySpinner);
 
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, R.id.spinner, city_names);
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.support_simple_spinner_dropdown_item, R.id.CitySpinner, city_names);
         spinner.setAdapter(adapter);
     }
 }

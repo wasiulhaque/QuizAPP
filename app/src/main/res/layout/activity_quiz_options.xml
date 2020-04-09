@@ -7,7 +7,7 @@
     tools:context=".Quiz_options">
 
     <RadioButton
-        android:id="@+id/option_1"
+        android:id="@+id/opt1_ques1"
         android:layout_width="354dp"
         android:layout_height="42dp"
         android:background="@color/colorPrimary"
@@ -21,7 +21,7 @@
         app:layout_constraintVertical_bias="0.371" />
 
     <RadioButton
-        android:id="@+id/optionn_4"
+        android:id="@+id/opt4_ques1"
         android:layout_width="354dp"
         android:layout_height="42dp"
         android:background="@color/colorPrimary"
@@ -35,7 +35,7 @@
         app:layout_constraintVertical_bias="0.617" />
 
     <RadioButton
-        android:id="@+id/option_3"
+        android:id="@+id/opt3_ques1"
         android:layout_width="354dp"
         android:layout_height="42dp"
         android:background="@color/colorPrimary"
@@ -49,7 +49,7 @@
         app:layout_constraintVertical_bias="0.531" />
 
     <RadioButton
-        android:id="@+id/option_2"
+        android:id="@+id/opt2_ques1"
         android:layout_width="354dp"
         android:layout_height="42dp"
         android:background="@color/colorPrimary"
