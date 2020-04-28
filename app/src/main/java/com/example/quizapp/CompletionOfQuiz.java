@@ -16,9 +16,9 @@ public class CompletionOfQuiz extends AppCompatActivity {
         eval = findViewById(R.id.evalue);
         eval.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent eval = new Intent(CompletionOfQuiz.this,QuizResult.class);
-                startActivity(eval);
+            public void onClick(View v) {
+                Intent intent=new Intent(CompletionOfQuiz.this,QuizResult.class);
+                startActivity(intent);
             }
         });
     }

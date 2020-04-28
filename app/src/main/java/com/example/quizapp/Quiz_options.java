@@ -10,6 +10,9 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
 import ticker.views.com.ticker.widgets.circular.timer.callbacks.CircularViewCallback;
 import ticker.views.com.ticker.widgets.circular.timer.view.CircularView;
 
@@ -18,6 +21,7 @@ public class Quiz_options extends AppCompatActivity {
     CircularView circularViewWithTimer;
     TextView textView;
     Button submit,skip;
+    FirebaseDatabase database=FirebaseDatabase.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -61,9 +65,39 @@ public class Quiz_options extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent=new Intent(Quiz_options.this,CompletionOfQuiz.class);
-                startActivity(intent);
+               startActivity(intent);
+
             }
         });
 
+
+        r1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatabaseReference databaseReference=database.getReference("Question no: 1");
+                databaseReference.setValue("A");
+            }
+        });
+        r2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatabaseReference databaseReference=database.getReference("Question no: 1");
+                databaseReference.setValue("B");
+            }
+        });
+        r3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatabaseReference databaseReference=database.getReference("Question no: 1");
+                databaseReference.setValue("C");
+            }
+        });
+        r4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                DatabaseReference databaseReference=database.getReference("Question no: 1");
+                databaseReference.setValue("D");
+            }
+        });
     }
 }
