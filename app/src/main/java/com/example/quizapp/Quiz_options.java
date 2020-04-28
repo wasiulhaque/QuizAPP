@@ -18,16 +18,20 @@ import ticker.views.com.ticker.widgets.circular.timer.callbacks.CircularViewCall
 import ticker.views.com.ticker.widgets.circular.timer.view.CircularView;
 
 public class Quiz_options extends AppCompatActivity {
-    RadioButton option1,option2,option3,option4;
+    RadioButton r1,r2,r3,r4;
     CircularView circularViewWithTimer;
     TextView textView;
     Button submit,skip;
+
     FirebaseDatabase database=FirebaseDatabase.getInstance();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_options);
-        option1=findViewById(R.id.opt1_ques1);
+        r1=findViewById(R.id.opt1_ques1);
+        r2=findViewById(R.id.opt2_ques1);
+        r3=findViewById(R.id.opt3_ques1);
+        r4=findViewById(R.id.opt4_ques1);
         submit=findViewById(R.id.submit_btn);
         circularViewWithTimer=(CircularView)findViewById(R.id.circular_view);
         CircularView.OptionsBuilder builderWithTimer =

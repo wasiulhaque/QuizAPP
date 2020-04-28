@@ -14,8 +14,8 @@ public class QuizOrStudyMaterialSelector extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_or_study_material_selector);
-        quiz = findViewById(R.id.quiz);
-        studyMaterial = findViewById(R.id.studyMaterial);
+        quiz = findViewById(R.id.GiveQuiz);
+        studyMaterial = findViewById(R.id.ToStudyMaterial);
         quiz.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

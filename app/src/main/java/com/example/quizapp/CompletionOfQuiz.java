@@ -13,7 +13,7 @@ public class CompletionOfQuiz extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_completion_of_quiz);
-        eval = findViewById(R.id.evalue);
+        //eval = findViewById(R.id.evalue);
         eval.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
