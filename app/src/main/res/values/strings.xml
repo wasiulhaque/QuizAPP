@@ -47,6 +47,9 @@
     <string name="chapter_name">Chapter Name</string>
     <string name="time">Time</string>
     <string name="date">Date</string>
+    <string name="proceed_to_evaluation">Proceed to Evaluation</string>
+    <string name="congratulations">Congratulations</string>
+    <string name="you_have_completed_the_quiz">You have completed the quiz</string>
 
     <string-array name="city_names">
         <item>Dhaka</item>

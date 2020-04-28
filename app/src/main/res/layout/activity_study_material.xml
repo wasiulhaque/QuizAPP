@@ -8,7 +8,7 @@
     tools:context=".StudyMaterial">
 
     <Button
-        android:id="@+id/button22"
+        android:id="@+id/StudyMaterialBack"
         android:layout_width="350dp"
         android:layout_height="54dp"
         android:background="#FB2626"
@@ -21,11 +21,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.573"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button20"
+        app:layout_constraintTop_toBottomOf="@+id/material_4"
         app:layout_constraintVertical_bias="0.67" />
 
     <Button
-        android:id="@+id/button20"
+        android:id="@+id/material_4"
         android:layout_width="310dp"
         android:layout_height="69dp"
         android:background="#A1A4BB"
@@ -37,11 +37,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/StudyMaterialChap"
         app:layout_constraintVertical_bias="0.582" />
 
     <Button
-        android:id="@+id/button19"
+        android:id="@+id/material_3"
         android:layout_width="310dp"
         android:layout_height="69dp"
         android:background="#D6D09A"
@@ -53,11 +53,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/StudyMaterialChap"
         app:layout_constraintVertical_bias="0.401" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/StudyMaterialSec"
         android:layout_width="310dp"
         android:layout_height="47dp"
         android:fontFamily="@font/advent_pro_light"
@@ -73,7 +73,7 @@
         app:layout_constraintVertical_bias="0.051" />
 
     <TextView
-        android:id="@+id/textView15"
+        android:id="@+id/StudyMaterialSub"
         android:layout_width="281dp"
         android:layout_height="33dp"
         android:fontFamily="@font/advent_pro_light"
@@ -84,11 +84,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView14"
+        app:layout_constraintTop_toBottomOf="@+id/StudyMaterialSec"
         app:layout_constraintVertical_bias="0.0" />
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/StudyMaterialChap"
         android:layout_width="281dp"
         android:layout_height="39dp"
         android:layout_marginBottom="444dp"
@@ -100,7 +100,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.615"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView15"
+        app:layout_constraintTop_toBottomOf="@+id/StudyMaterialSub"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -116,11 +116,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView16"
+        app:layout_constraintTop_toBottomOf="@+id/StudyMaterialChap"
         app:layout_constraintVertical_bias="0.041" />
 
     <Button
-        android:id="@+id/button18"
+        android:id="@+id/material_2"
         android:layout_width="310dp"
         android:layout_height="69dp"
         android:background="#7E8286"
@@ -149,6 +149,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.546"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button20"
+        app:layout_constraintTop_toBottomOf="@+id/material_4"
         app:layout_constraintVertical_bias="0.187" />
 </androidx.constraintlayout.widget.ConstraintLayout>

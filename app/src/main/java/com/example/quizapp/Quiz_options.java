@@ -1,14 +1,15 @@
 package com.example.quizapp;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 
-import androidx.appcompat.app.AppCompatActivity;
+
 
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -26,15 +27,8 @@ public class Quiz_options extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_options);
+        option1=findViewById(R.id.opt1_ques1);
         submit=findViewById(R.id.submit_btn);
-        RadioButton r1 = findViewById(R.id.r1);
-        r1.setTextColor(Color.WHITE);
-        RadioButton r2 = findViewById(R.id.r2);
-        r2.setTextColor(Color.WHITE);
-        RadioButton r3 = findViewById(R.id.r3);
-        r3.setTextColor(Color.WHITE);
-        RadioButton r4 = findViewById(R.id.r4);
-        r4.setTextColor(Color.WHITE);
         circularViewWithTimer=(CircularView)findViewById(R.id.circular_view);
         CircularView.OptionsBuilder builderWithTimer =
                 new CircularView.OptionsBuilder()
@@ -55,7 +49,6 @@ public class Quiz_options extends AppCompatActivity {
                                 // Toast.makeText(MainActivity.this, "CircularCallback: Timer Cancelled ", Toast.LENGTH_SHORT).show();
                             }
                         });
-
         circularViewWithTimer.startTimer();
 
         circularViewWithTimer.setOptions(builderWithTimer);
