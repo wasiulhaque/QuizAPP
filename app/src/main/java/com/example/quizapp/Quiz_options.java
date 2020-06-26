@@ -1,8 +1,8 @@
 package com.example.quizapp;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,8 +10,6 @@ import android.widget.RadioButton;
 import android.widget.TextView;
 
 
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.FirebaseFirestore;
 
@@ -26,9 +24,11 @@ public class Quiz_options extends AppCompatActivity {
     TextView textView;
     Button submit, skip;
     ArrayList<Question> questions = new ArrayList<>();
+    String[] answers = new String[10];
     FirebaseFirestore firebaseFirestore;
     CollectionReference reference = FirebaseFirestore.getInstance().collection("Questions");
-
+    private RecyclerView queRecycler;
+    private QueAdapter queAdapter;
 
     /*FirebaseDatabase database=FirebaseDatabase.getInstance();*/
     @Override
@@ -36,26 +36,37 @@ public class Quiz_options extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_options);
 
-        optionA = findViewById(R.id.optionA);
-        optionB = findViewById(R.id.optionB);
-        optionC = findViewById(R.id.optionC);
-        optionD = findViewById(R.id.optionD);
-
-
         submit = findViewById(R.id.submit_btn);
-        circularViewWithTimer = (CircularView) findViewById(R.id.circular_view);
+        circularViewWithTimer = findViewById(R.id.circular_view);
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                uploadData();
+            }
+        });
 
         TimerSettings();
-
         addQuestions();
+
+        queAdapter = new QueAdapter(questions);
+        queRecycler = findViewById(R.id.recycleView);
+        queRecycler.setAdapter(queAdapter);
+
+        queAdapter.setOnOptionClickListener(new QueAdapter.OnOptionClickListener() {
+            @Override
+            public void onClick(int position, String option) {
+                answers[position] = option;
+            }
+        });
+
     /*    questions.add(new Question(1,"A","B","c","D","A"));
         reference.document(set).set()*/
 
-    optionB.setOnClickListener(this::onClick);
-    optionA.setOnClickListener(this::onClick);
-    optionC.setOnClickListener(this::onClick);
-    optionD.setOnClickListener(this::onClick);
 
+  /*      optionA.setOnClickListener(this::onClick);
+        optionC.setOnClickListener(this::onClick);
+        optionD.setOnClickListener(this::onClick);
+        optionB.setOnClickListener(this::onClick);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,7 +74,7 @@ public class Quiz_options extends AppCompatActivity {
                 startActivity(intent);
 
             }
-        });
+        });*/
 
 
 
@@ -101,25 +112,34 @@ public class Quiz_options extends AppCompatActivity {
         });*/
     }
 
+    private void uploadData() {
+        for (int i = 0; i < questions.size(); i++) {
+            questions.get(i).setUserAnswer(answers[i]);
+            reference.document(questions.get(i).getQuestionId()+"").set(questions.get(i));
+        }
+
+        // reference.document(questions.get(i).getQuestionId()+"").update("userAnswer",answers[i]);
+
+    }
+
     private void onClick(View view) {
-        String userAnswer="";
+        String userAnswer = "";
 
-        if(optionA.isChecked())userAnswer="A";
-        else if(optionB.isChecked())userAnswer="B";
-        else if(optionC.isChecked())userAnswer="C";
-        else if(optionD.isChecked())userAnswer="D";
+        if (optionA.isChecked()) userAnswer = "A";
+        else if (optionB.isChecked()) userAnswer = "B";
+        else if (optionC.isChecked()) userAnswer = "C";
+        else if (optionD.isChecked()) userAnswer = "D";
 
 
-        reference.document(questions.get(0).getQuestionId()+"").update("userAnswer",userAnswer);
-
+        reference.document(questions.get(0).getQuestionId() + "").update("userAnswer", userAnswer);
 
 
     }
 
     private void addQuestions() {
-        questions.add(new Question(1, "A", "A", "B", "C", "D"));
-        questions.add(new Question(2, "A", "A", "B", "C", "D"));
-        questions.add(new Question(3, "A", "A", "B", "C", "D"));
+        questions.add(new Question("Question 1", 0, "A", "A", "B", "C", "D"));
+        questions.add(new Question("Question 2", 1, "A",  "A", "B", "C", "D"));
+        questions.add(new Question("Question 3", 2, "A", "A", "B", "C", "D"));
 
         for (Question question : questions) {
             reference.document(question.getQuestionId() + "").set(question);

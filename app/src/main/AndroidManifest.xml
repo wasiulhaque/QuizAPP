@@ -9,15 +9,15 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".UploadStudyMaterial"/>
+        <activity android:name=".UploadStudyMaterial" />
         <activity android:name=".QuizResult" />
-        <activity android:name=".SignUp"/>
+        <activity android:name=".SignUp" />
         <activity android:name=".PreviousQuiz" />
         <activity android:name=".StudyMaterial" />
         <activity android:name=".QuizConfirmation" />
         <activity android:name=".QuizOrStudyMaterialSelector" />
         <activity android:name=".ChapterSelector" />
-        <activity android:name=".Quiz_options" >
+        <activity android:name=".Quiz_options">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,11 +27,8 @@
         <activity android:name=".SelectClass" />
         <activity android:name=".SubjectSelector" />
         <activity android:name=".LogInActivity" />
-        <activity android:name=".CompletionOfQuiz"/>
-        <activity android:name=".MainActivity">
-
-        </activity>
-
+        <activity android:name=".CompletionOfQuiz" />
+        <activity android:name=".MainActivity"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

@@ -1,18 +1,13 @@
 package com.example.quizapp;
 
 public class Question {
+    private String questionText;
     private int questionId;
     private String answer,userAnswer;
     private String option1;
     private String option2;
 
-    public String getUserAnswer() {
-        return userAnswer;
-    }
 
-    public void setUserAnswer(String userAnswer) {
-        this.userAnswer = userAnswer;
-    }
 
     private String option3;
     private String option4;
@@ -20,13 +15,23 @@ public class Question {
     public Question() {
     }
 
-    public Question(int questionId, String answer, String option1, String option2, String option3, String option4) {
+    public Question(String questionText, int questionId, String answer, String option1, String option2, String option3, String option4) {
+        this.questionText = questionText;
         this.questionId = questionId;
         this.answer = answer;
+        //this.userAnswer = userAnswer;
         this.option1 = option1;
         this.option2 = option2;
         this.option3 = option3;
         this.option4 = option4;
+    }
+
+    public String getQuestionText() {
+        return questionText;
+    }
+
+    public void setQuestionText(String questionText) {
+        this.questionText = questionText;
     }
 
     public int getQuestionId() {
@@ -43,6 +48,14 @@ public class Question {
 
     public void setAnswer(String answer) {
         this.answer = answer;
+    }
+
+    public String getUserAnswer() {
+        return userAnswer;
+    }
+
+    public void setUserAnswer(String userAnswer) {
+        this.userAnswer = userAnswer;
     }
 
     public String getOption1() {

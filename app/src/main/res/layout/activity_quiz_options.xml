@@ -7,120 +7,45 @@
     tools:context=".Quiz_options">
 
 
-    <RadioGroup
-        android:id="@+id/radioGroup2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
-        android:layout_marginBottom="16dp"
-        android:background="@color/colorPrimary"
-        android:padding="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/submit_btn"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.428"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/question_textVIew"
-        app:layout_constraintVertical_bias="1.0">
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Option A"
-            android:id="@+id/optionA"
-            android:textColor="@color/white"
-
-            />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Option B"
-            android:id="@+id/optionB"
-            android:textColor="@color/white"
-
-            />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Option C"
-            android:id="@+id/optionC"
-            android:textColor="@color/white"
-
-            />
-
-        <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Option D"
-            android:id="@+id/optionD"
-            android:textColor="@color/white"
-
-            />
-
-    </RadioGroup>
-
-    <Button
-        android:id="@+id/skip_btn"
-        android:layout_width="251dp"
-        android:layout_height="56dp"
-        android:backgroundTint="#A51919"
-        android:shadowColor="#2D2F31"
-        android:text="@string/skip_the_question"
-        android:textColor="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/submit_btn"
-        app:layout_constraintVertical_bias="0.389" />
-
-    <TextView
-        android:id="@+id/question_textVIew"
-        android:layout_width="308dp"
-        android:layout_height="42dp"
-        android:fontFamily="sans-serif"
-
-        android:text="@string/question_1"
-        android:textColor="@color/colorPrimaryDark"
-        android:textFontWeight="@android:integer/config_shortAnimTime"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.281"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.264" />
-
     <ticker.views.com.ticker.widgets.circular.timer.view.CircularView
         android:id="@+id/circular_view"
         android:layout_width="116dp"
-        android:layout_height="62dp"
-        app:layout_constraintBottom_toTopOf="@+id/question_textVIew"
+
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.414"
+        app:layout_constraintHorizontal_bias="0.469"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.381"
         app:m_arc_stroke_color="@android:color/white"
         app:m_cicle_stroke_width="14"
         app:m_circle_radius="25"
         app:m_circle_stroke_color="@color/colorPrimary" />
 
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="36dp"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@+id/submit_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/circular_view"
+        tools:listitem="@layout/que_item" />
 
     <Button
         android:id="@+id/submit_btn"
         android:layout_width="251dp"
         android:layout_height="56dp"
+        android:layout_marginBottom="8dp"
         android:backgroundTint="#317F39"
         android:text="@string/submit_quiz"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.757" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
