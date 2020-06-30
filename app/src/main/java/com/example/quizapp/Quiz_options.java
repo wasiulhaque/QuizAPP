@@ -3,11 +3,13 @@ package com.example.quizapp;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.google.firebase.firestore.CollectionReference;
@@ -113,10 +115,20 @@ public class Quiz_options extends AppCompatActivity {
     }
 
     private void uploadData() {
+        boolean flag=false;
+        int count=0;
         for (int i = 0; i < questions.size(); i++) {
             questions.get(i).setUserAnswer(answers[i]);
             reference.document(questions.get(i).getQuestionId()+"").set(questions.get(i));
+            flag=questions.get(i).getAnswer().equals(questions.get(i).getUserAnswer());
+            if(flag)count++;
         }
+        Toast.makeText(this, "Your number of Correct answer is : "+count, Toast.LENGTH_SHORT).show();
+
+        Intent intent=new Intent(this,QuizResult.class);
+        intent.putExtra("result",count);
+        startActivity(intent);
+
 
         // reference.document(questions.get(i).getQuestionId()+"").update("userAnswer",answers[i]);
 

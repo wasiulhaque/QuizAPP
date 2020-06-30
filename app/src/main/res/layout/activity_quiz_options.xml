@@ -22,18 +22,27 @@
         app:m_circle_radius="25"
         app:m_circle_stroke_color="@color/colorPrimary" />
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycleView"
+
+    <RelativeLayout
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginBottom="36dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toTopOf="@+id/submit_btn"
+
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/circular_view"
-        tools:listitem="@layout/que_item" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycleView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/que_item" />
+    </RelativeLayout>
 
     <Button
         android:id="@+id/submit_btn"

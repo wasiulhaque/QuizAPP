@@ -6,6 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".CompletionOfQuiz">
 
+    <ImageButton
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:id="@+id/backarrowQuizcompletation"
+        android:src="@drawable/backarrow"
+        app:layout_constraintBottom_toTopOf="@+id/congratulationID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
     <TextView
         android:id="@+id/congratulationID"
         android:layout_width="224dp"
@@ -20,6 +32,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.323" />
+
 
     <TextView
         android:id="@+id/quizCompleteText"

@@ -3,12 +3,9 @@ package com.example.quizapp;
 public class Question {
     private String questionText;
     private int questionId;
-    private String answer,userAnswer;
+    private String answer, userAnswer;
     private String option1;
     private String option2;
-
-
-
     private String option3;
     private String option4;
 
