@@ -175,18 +175,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.697" />
 
-    <view
-        android:id="@+id/view2"
-        class="androidx.constraintlayout.widget.ConstraintLayout"
-        android:layout_width="303dp"
-        android:layout_height="326dp"
-        android:background="@drawable/edit_text_border2"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.565" />
-
     <Button
         android:id="@+id/MainMenu"
         android:layout_width="141dp"
