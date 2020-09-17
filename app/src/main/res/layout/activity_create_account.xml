@@ -51,7 +51,7 @@
                 app:layout_constraintVertical_bias="0.056" />
 
             <EditText
-                android:id="@+id/EnterName"
+                android:id="@+id/passwordID"
                 android:layout_width="match_parent"
                 android:layout_height="71dp"
                 android:ems="10"
@@ -77,11 +77,11 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.101"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/EnterName"
+                app:layout_constraintTop_toBottomOf="@+id/passwordID"
                 app:layout_constraintVertical_bias="0.068" />
 
             <EditText
-                android:id="@+id/EnterYourEmail"
+                android:id="@+id/dateOfBirthID"
                 android:layout_width="match_parent"
                 android:layout_height="61dp"
                 android:ems="10"
@@ -96,7 +96,7 @@
                 app:layout_constraintVertical_bias="0.0" />
 
             <EditText
-                android:id="@+id/EnterPassword"
+                android:id="@+id/addressID"
                 android:layout_width="match_parent"
                 android:layout_height="69dp"
                 android:ems="10"
@@ -108,7 +108,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.507"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/EnterYourEmail"
+                app:layout_constraintTop_toBottomOf="@+id/dateOfBirthID"
                 app:layout_constraintVertical_bias="0.075" />
 
             <TextView
@@ -124,7 +124,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.6"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/EnterPassword"
+                app:layout_constraintTop_toBottomOf="@+id/addressID"
                 app:layout_constraintVertical_bias="0.137" />
 
             <TextView
