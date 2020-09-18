@@ -167,7 +167,9 @@ public class Quiz_options extends AppCompatActivity {
                         .setCircularViewCallback(new CircularViewCallback() {
                             @Override
                             public void onTimerFinish() {
-
+                                Intent intent=new Intent(Quiz_options.this,QuizResult.class);
+                               // intent.putExtra("result",count);
+                                startActivity(intent);
                                 // Will be called if times up of countdown timer
                                 //Toast.makeText(MainActivity.this, "CircularCallback: Timer Finished ", Toast.LENGTH_SHORT).show();
                             }

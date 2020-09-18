@@ -20,10 +20,10 @@ public class QuizConfirmation extends AppCompatActivity {
         quizgo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-               /* Intent intent =new Intent(QuizConfirmation.this,Quiz_options.class);
-                startActivity(intent);*/
+                Intent intent =new Intent(QuizConfirmation.this,Quiz_options.class);
+                startActivity(intent);
 
-                startDialogFragment();
+               // startDialogFragment();
             }
         });
 
