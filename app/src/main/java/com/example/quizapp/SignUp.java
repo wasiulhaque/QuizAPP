@@ -22,7 +22,7 @@ public class SignUp extends AppCompatActivity {
     TextView account;
     EditText Name, Email, Password, dateOfBirth, address, institute, mobile;
     Button submit;
-    FirebaseAuth mAuth;
+    private FirebaseAuth mAuth;
     ProgressBar progressBar;
 
     @Override
@@ -80,6 +80,14 @@ public class SignUp extends AppCompatActivity {
                         else{
                             Toast.makeText(SignUp.this, "Error!" + task.getException().getMessage(),Toast.LENGTH_LONG).show();
                         }
+                    }
+                });
+
+                submit.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Intent intent3 = new Intent(SignUp.this, SelectClass.class);
+                        startActivity(intent3);
                     }
                 });
             }

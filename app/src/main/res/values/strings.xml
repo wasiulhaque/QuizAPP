@@ -50,6 +50,7 @@
     <string name="proceed_to_evaluation">Proceed to Evaluation</string>
     <string name="congratulations">Congratulations</string>
     <string name="you_have_completed_the_quiz">You have completed the quiz</string>
+    <string name="welcome">Welcome</string>
 
     <string-array name="city_names">
         <item>Dhaka</item>
